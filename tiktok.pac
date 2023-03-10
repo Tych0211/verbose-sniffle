@@ -1,7 +1,7 @@
 function FindProxyForURL(url, host) {
   // Block common ad domains
   if (dnsDomainIs(host, "tiktok.com") ||
-      dnsDomainIs(host, "cdn-apple.com")) {
+      dnsDomainIs(host, "aaplimg.com")) {
     return "PROXY 127.0.0.2:80";
   }
 
