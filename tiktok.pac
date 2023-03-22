@@ -1,7 +1,6 @@
 function FindProxyForURL(url, host) {
   // Block TikTok
-  if (dnsDomainIs(host, "tiktok.com") ||
-      dnsDomainIs(host, "akamaitechnologies.com")) {
+  if (dnsDomainIs(host, "tiktok.com")) {
     return "PROXY 127.0.0.2:80";
   }
 
